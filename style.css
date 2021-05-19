@@ -846,7 +846,7 @@ ___________________________*/
 
     /** title **/
     .title { 
-        margin: 30px auto;
+        margin: auto;
         padding: 0; 
     }
     .title h1 {
