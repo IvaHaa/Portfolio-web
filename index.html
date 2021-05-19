@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="page">
+
+            <div class="grid-container">
+
+                <nav class="navigacia">
+
+                    <div class="nelogo">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>  
+                        <ul id="skryvane">
+                            <li class="logo"> <a href="#" onclick="myFunction1()"> @Iva Hevesi </a> </li>
+                            <li > <a  href="#links" onclick="myFunction1()">Portfolio links</a> </li>
+                            <li > <a  href="#gallery" onclick="myFunction1()">Gallery</a> </li>
+                            <li > <a  href="#about" onclick="myFunction1()">About me</a> </li>
+                            <li > <a  href="#contacts" onclick="myFunction1()">Contacts</a> </li>
+                        </ul>
+                    </div>
+                </nav>                
+
+                <script>
+
+                    var x = document.getElementById("skryvane");
+
+                    function myFunction() {
+                      if (x.style.display === "flex" && $(window).width() <= 605) {
+                        x.style.display = "none";
+                      } else if ($(window).width() <= 605){
+                        x.style.display = "flex";
+                        x.style.flexDirection = "column";
+                        x.style.textAlign = "left";
+                      }
+                    }
+
+                    function myFunction1() {
+                      if (x.style.display === "flex" && $(window).width() <= 605) {
+                        x.style.display = "none";
+                      } else if ($(window).width() <= 605){
+                        x.style.display = "flex";
+                        x.style.flexDirection = "column";
+                        x.style.textAlign = "left";                       
+                      }
+                    }
+
+                    $(window).resize(function() {
+                        if ($(window).width() <= 605) {
+                            x.style.display = "none";
+                        }
+                    });
+
+                    
+                    $(window).resize(function() {
+                        if ($(window).width() > 605) {
+                            x.style.display = "flex";
+                            x.style.flexDirection = "row";
+                            
+                        }
+                    });
+
+                </script>
+
+                    <div class="title">     
+                            <h1>Iva Hevesi</h1>
+                            <div id="links" style="display: block; margin-left: 1px; "> </div>
+                    </div>
+
+                    <div class="slogantext">
+                        <img src="slogan.svg" alt="logo">
+                    </div>
+                
+                
+                    <div class="nadpisLinky">
+                            <h2>Portfolio</h2>
+                    </div>
+                    <div class="link1">
+                        <div class="tlacidlo">
+                            <a href="/portfolio_stranka/web.html"> User Experience Design <br> & Web Development</a>
+                        </div>
+                        <img src="htmlcssfigma.png" alt="loga html css figma">
+                    </div>
+                    <div class="link2">
+                        <div class="tlacidlo">
+                            <a href="/portfolio_stranka/visuals.html"> Visual Graphics <br> & Photography</a>
+                        </div>
+                        <img src="cc.png" alt="loga adobe cc">
+                    </div>
+                    <div class="link3">
+                        <div class="tlacidlo">
+                            <a href="/portfolio_stranka/circus.html"> Contemporary Circus <br> & Movement</a>
+                        </div>
+                        <img src="ckk.png" alt="logo cirkuskus">
+
+                        <a id="gallery" style="display: block; margin-left: 150px;"> </a>
+                    </div>
+                
+                    <div class="nadpisGall">
+                        <h2>Gallery</h2>
+                    </div>
+
+                    <div class="gallery cf">
+                        <div><img src="/portfolio_stranka/gallery/Asset-14.png" alt=""></div>
+                        <div><img src="/portfolio_stranka/gallery/Asset-15.png" alt=""></div>
+                        <div><img src="/portfolio_stranka/gallery/Asset-16.png" alt=""></div>
+                        <div><img src="/portfolio_stranka/gallery/Asset-17.png" alt=""></div>
+                        
+                        <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-18.png" alt=""></div>
+                        <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-22.jpg" alt=""></div>
+                        <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-19.png" alt=""></div>
+                        <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-20.png" alt=""></div>
+                        <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-21.png" alt=""></div>
+                        <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-23.png" alt=""></div>
+
+                    </div>
+                    <div class="nadpisAbme" id="about">
+                        <h2>About me</h2>
+
+                        <div class="tlacidlo1">
+                            <a href="/portfolio_stranka/gallery/Hevesiova_Iva_CV_sk_5-2021.pdf" target="_blank" > CV (in slovak) </a>
+                        </div>
+                    </div>
+
+                    <div class="aboutme">
+                        <p>I'm an artistic soul and a great listener, always looking to help others. 
+                        I engage with meaningful ideas and enjoy solving problems. </p> 
+
+                        <p>I'm an enthusiastic & optimistic perfectionist, always interested
+                        in technology - particularly user experience design. I'm a fast learner
+                        when it comes to anything new, as many of my skills are self-taught. </p> 
+                        <a id="contacts" style="display: block; margin-left: 150px;"></a>
+                    </div>
+
+                    <div class="aboutmefotka">
+                        <img src="jaorez.jpg" alt="photo of me">
+                    </div>
+
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50052.94007644998!2d19.142236423914493!3d48.75165016152185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47151671e66294a5%3A0x60fecf593cb89500!2sMagursk%C3%A1%2011%2C%20974%2011%20Bansk%C3%A1%20Bystrica!5e0!3m2!1sen!2ssk!4v1619508904272!5m2!1sen!2ssk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="contacts">
+                        <h2> Contacts</h2> 
+                        <ul>
+                            <li><a href="mailto:ivkahevesi@gmail.com"> <i class="fas fa-envelope-square"></i> ivkahevesi@gmail.com</a></li>
+                            <li> <a href="tel:+421914260993"> <i class="fas fa-phone-square-alt"></i> +421 914 260 993 </a></li>
+                            
+                            <li><a href="https://www.github.com/IvaHaa"> <i class="fab fa-github-square"></i> GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/ivahaa"> <i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="formular">
+
+                        <form>
+                            <fieldset>
+                                <div>
+                                    <p class="label">Your contact information</p>
+                                </div>
+                                <div>
+                                    <input type="text" name="meno" placeholder="Name">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <p class="label">Your message</p>
+                                    <textarea name="message" id="message" rows="4" > </textarea>
+                                </div>
+                            </fieldset>
+                            <input type="submit" value="Send" >				
+                        </form>
+                    </div>
+                <!--
+                    <div class="tabulka">
+                        <table>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>8-10</th>
+                                <th>10-12</th>
+                                <th>12-14</th>
+                                <th>14-16</th>
+                            </tr>
+                            <tr>
+                                <th>Monday</th>
+                                <td>yes</td>
+                                <td>no</td>
+                                <td>yes</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <th>Tuesday</th>
+                                <td>yes</td>
+                                <td>yes</td>
+                                <td>yes</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <th>Wednesday</th>
+                                <td>no</td>
+                                <td>no</td>
+                                <td>yes</td>
+                                <td>yes</td>
+                            </tr>
+                            <tr>
+                                <th>Thursday</th>
+                                <td>no</td>
+                                <td>no</td>
+                                <td>no</td>
+                                <td>yes</td>
+                            </tr>
+                            <tr>
+                                <th>Friday</th>
+                                <td>yes</td>
+                                <td>no</td>
+                                <td>no</td>
+                                <td>yes</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                -->
+                
+                 <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-arrow-up"></i></button>
+
+                 
+                <script>
+                    //Get the button
+                    var mybutton = document.getElementById("myBtn");
+                    
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {scrollFunction()};
+                    
+                    function scrollFunction() {
+                      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                        mybutton.style.display = "block";
+                      } else {
+                        mybutton.style.display = "none";
+                      }
+                    }
+                    
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                      document.body.scrollTop = 0;
+                      document.documentElement.scrollTop = 0;
+                    }
+                    
+                    /**   
+                    let mainNavLinks = document.querySelectorAll("nav ul li a");
+                    let mainSections = document.querySelectorAll("section");
+            
+                    let lastId;
+                    let cur = [];
+            
+                    window.addEventListener("scroll", event => {
+                    let fromTop = window.scrollY;
+            
+                        mainNavLinks.forEach(link => {
+                        let section = document.querySelector(link.hash);
+                
+                            if (
+                                section.offsetTop <= fromTop &&
+                                section.offsetTop + section.offsetHeight > fromTop
+                            ) {
+                                link.classList.add("current");
+                            } else {
+                                link.classList.remove("current");
+                            }
+                        });
+                    });
+                    
+                    **/
+                </script>
+                
+                <div class="footer"> 
+                    <a href="#"><img src="/portfolio_stranka/logo.svg" alt="logo vacsie"></a> 
+
+                    <div class="prvy">
+                        <a href="#gallery">Gallery</a>
+                        <a href="#about">About me</a>
+                        <a href="#contacts">Contacts</a>
+                    </div>
+                    <div class="druhy">
+                        <a href="/portfolio_stranka/web.html">UX Design & Web</a>
+                        <a href="/portfolio_stranka/visuals.html">Visual Graphics & Photography</a>
+                        <a href="/portfolio_stranka/circus.html">Contemporary Circus & Movement</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>    

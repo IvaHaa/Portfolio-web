@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <link rel="stylesheet" type="text/css" href="styleP.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="page">
+
+            <div class="grid-container">
+
+                <div class="navigacia">
+                    
+                    <nav class="menu">
+                        <ul>
+                            <li> <a href="index.html" class="activna logo"> <img src="logo.svg" alt="logo" style="height: 80px;"> </a> </li>
+                            <li> <a href="/portfolio_stranka/web.html" class="nelogo">User Experience Design & Web Development</a> </li>
+                            <li> <a href="/portfolio_stranka/circus.html" class="nelogo">Contemporary Circus & Movement</a> </li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+                <div class="title">
+                    <h1>Visual Graphics <br> & Photography</h1>
+                </div>
+                <div class="slogantext">                           
+                    <img src="cc.png" alt="loga adobe cc">
+                </div>
+
+                <div class="nadpisAbme" >
+                    <h2>About my visual work??</h2>
+                </div>
+
+                <div class="aboutme">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate convallis urna, eget rutrum nisi tristique id. Nullam non elit a orci dignissim maximus. In pharetra metus a lacus efficitur, at tincidunt purus tempor. Praesent venenatis felis nec nunc cursus, ac elementum tortor eleifend. Cras tincidunt, lorem ut vehicula egestas, quam ligula porta est, nec ultricies dui turpis lobortis ipsum. Aliquam eget tempus dolor. Phasellus tempor pellentesque tortor interdum tristique. Donec rutrum quam non orci mattis, sit amet auctor ex ullamcorper. Duis non posuere leo. Nulla et pulvinar turpis, sit amet pellentesque nulla. Nulla dictum, massa sit amet mattis vestibulum, augue tellus elementum nibh, vel tristique risus nisi ac magna.</p>
+
+                    <p>   Suspendisse ac nunc malesuada, mattis mi id, placerat turpis. Phasellus ac dolor sed augue interdum tincidunt sed et tortor. Morbi consectetur metus et mauris tempus rhoncus. Vestibulum quis enim ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tristique ante in metus gravida, vitae placerat ex condimentum. Praesent rutrum ultrices felis et venenatis. Morbi varius suscipit arcu, in tempus mauris congue eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris et diam nec ligula ultrices semper eget non elit. Suspendisse erat lacus, consequat eu nunc vel, fermentum accumsan risus.</p>
+                        
+                    <p> Nam elit turpis, efficitur vitae aliquam congue, facilisis facilisis erat. Suspendisse lacinia, leo non varius semper, enim elit tempor dolor, at pharetra sapien ante vel massa. Curabitur tempor lacinia nunc, non tempor dolor elementum ut. Etiam arcu velit, sollicitudin eu quam at, rhoncus maximus risus. Integer ultricies mollis faucibus. Phasellus justo turpis, rutrum sed turpis ut, pharetra iaculis diam. Pellentesque egestas molestie lorem, sit amet auctor leo tempor a. Cras rhoncus eleifend dui, et tristique augue facilisis sed. In hac habitasse platea dictumst. Morbi ac tortor eu est ullamcorper eleifend sit amet a enim. Phasellus a consectetur lorem. </p> 
+                </div>
+
+
+                <div class="nadpisGall">
+                    <h2>Gallery</h2>
+                </div>
+
+                <div class="gallery cf">
+                    <div><img src="/portfolio_stranka/gallery/Asset-14.png" alt=""></div>
+                    <div><img src="/portfolio_stranka/gallery/Asset-15.png" alt=""></div>
+                    <div><img src="/portfolio_stranka/gallery/Asset-16.png" alt=""></div>
+                    <div><img src="/portfolio_stranka/gallery/Asset-17.png" alt=""></div>
+                    
+                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-18.png" alt=""></div>
+                    <div><img class="vacsie" src="/portfolio_stranka/gallery/gif.gif" alt=""></div>
+                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-19.png" alt=""></div>
+                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-20.png" alt=""></div>
+                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-21.png" alt=""></div>
+
+                </div>
+
+
+                
+               
+
+                <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-arrow-up"></i></button>
+                <script>
+                    //Get the button
+                    var mybutton = document.getElementById("myBtn");
+                    
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {scrollFunction()};
+                    
+                    function scrollFunction() {
+                      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                        mybutton.style.display = "block";
+                      } else {
+                        mybutton.style.display = "none";
+                      }
+                    }
+                    
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                      document.body.scrollTop = 0;
+                      document.documentElement.scrollTop = 0;
+                    }
+                </script>
+                
+                <div class="footer"> 
+                    <img src="/portfolio_stranka/logo.svg" alt="logovacsie">
+
+                    <div class="prvy">
+                        <a href="#">Home</a>
+                        <a href="/portfolio_stranka/index.html#Contact">Contact</a>
+                        <a href="/portfolio_stranka/index.html#About">About me</a>
+                    </div>
+                    <div class="druhy">
+                        <a href="/portfolio_stranka/web.html">UX Design & Web</a>
+                        <a href="#">Visual Graphics & Photography</a>
+                        <a href="/portfolio_stranka/circus.html">Contemporary Circus & Movement</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>    

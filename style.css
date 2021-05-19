@@ -1,0 +1,1069 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Cormorant+Unicase:wght@600&family=Montserrat:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&family=Syne+Mono&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    padding: 0px;
+    margin: 0px 80px;
+    
+    background-image: url("pozadie.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+/** casti gridu nazvy **/
+
+/** navigacia **/
+.navigacia {
+    grid-area: navi;
+    padding: 0px;
+    margin: 0px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 90%;
+    z-index: 10;
+
+    background-image: url("pozadie.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.navigacia .icon {
+    display: none;
+}
+
+.nelogo ul {
+    display: flex;
+    align-content: space-between; 
+    list-style-type: none;
+}
+
+.logo {
+    flex: 1 0 50%;
+    text-align: left;
+}
+
+.navigacia a {
+    text-decoration: none;
+    padding: 15px 30px 15px 0px;
+    margin: 0;
+    line-height: 1px;
+}
+
+.navigacia a {
+    color: white;
+}
+.navigacia a:hover {
+    color: darkblue;
+}
+
+
+/**
+meniace sa active links 
+.current {
+    background-color: black;
+    color: blue;
+  }
+
+**/
+
+/** title **/
+.title {
+    grid-area: titl;
+    margin: 0px 15px;
+    margin-top: 100px;
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8em;
+    line-height: 1;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    margin: 50px 0px 0px 0px;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+
+}
+.slogantext {
+    grid-area: slog;   
+}
+.slogantext img {
+    height: 170px;
+    padding-top:130px;
+    margin-top: 100px;
+
+}
+
+/** links **/
+.nadpisLinky {
+    grid-area: nadL;
+    /** background-color: darkgoldenrod; **/
+    margin: 15px 15px 0px 15px;
+}
+.nadpisLinky h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0px 25px;
+}
+
+.link1 {
+    grid-area: lin1;
+    color: white;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link1 img {
+    height: 80px;
+    padding: 15px;
+}
+.link2 {
+    grid-area: lin2;
+    color: white;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link2 img {
+    height: 80px;
+    padding: 15px;
+}
+.link3 {
+    grid-area: lin3;
+    color: white;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link3 img {
+    height: 80px;
+    padding: 15px;
+}
+
+.tlacidlo {
+    width: 92%;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+
+}
+.tlacidlo:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.tlacidlo a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.tlacidlo a:hover {
+    color: rgb(0, 91, 133);
+    font-weight: 500;
+}
+
+/** gallery **/
+.nadpisGall {
+    grid-area: nadG;
+    /** background-color: darkgoldenrod; **/
+    margin: 75px 15px 0px 15px;
+}
+.nadpisGall h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0px 25px;
+}
+/* zvysok galery: */
+.gallery {
+    grid-area: gall;
+    /* border: rgba(255, 255, 255, 0.8) solid 1px; */
+}
+.gallery img {
+    height: 225px;
+    padding: 3px;
+    margin: 0;
+}
+.gallery {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*
+.gallery > div {
+    position: relative;
+    float: left; 
+
+}
+*/
+.gallery > div > img {
+    transition: .1s transform;
+    transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+    z-index: 1;
+}
+
+.gallery > div:hover > img {
+    transform: scale(1.8,1.8);
+    transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/** About me **/
+.nadpisAbme {
+    grid-area: nadA;
+    margin: 75px 0px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nadpisAbme h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0px 25px;
+}
+
+.tlacidlo1 {
+    width: 25%;
+    margin: 15px 0px 15px 15px;
+    padding: 0px 4px 0px 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+.tlacidlo1:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.tlacidlo1 a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    font-weight: 200;
+    padding: 5px 4px 0px 4px;
+}
+.tlacidlo1 a:hover {
+    color: rgb(0, 91, 133);
+    font-weight: 500;
+}
+
+.aboutme {
+    grid-area: abme;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+}
+.aboutme p {
+    padding: 15px;
+    margin: 0;
+}
+
+.aboutmefotka {
+    grid-area: abfo;
+   display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.aboutmefotka img {
+    height: 250px;
+    border-radius: 50%;
+    padding-bottom: 15px;
+}
+.map {
+    grid-area: mapp;
+    margin-top: 75px;
+
+}
+.contacts {
+    grid-area: cont;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    margin-top: 75px;
+}
+.contacts h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0px 25px;
+}
+.contacts ul {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: white;
+    padding: 20px 0px 10px 25px;
+    margin: 0px 0px;
+    line-height: 1.6em;
+}
+.contacts a {
+    color: white;
+    text-decoration: solid;
+}
+.contacts li {
+    list-style-type: none;
+}
+.contacts i {
+    padding-right: 8px;
+    font-size: 1.2em;
+}
+.contacts a:hover {
+    color: darkblue;
+}
+
+/** FORM **/
+.formular {
+    margin-top: 75px;
+    grid-area: form;
+}
+
+.formular form {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    padding: 2%;
+    height: 94%;
+    color: white;
+}
+
+.formular form:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.formular fieldset{
+    border: none;
+}
+
+.formular input, textarea{
+    padding: 10px 10px;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border: none;
+}
+
+input[type=text], input[type=email] {
+  width: 49%;
+  background-color: rgba(11, 155, 165, 0.685);
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.label {
+    color: rgb(0, 91, 133);
+    width: 100%;
+    text-align: left;
+    font-weight: 400;
+    padding: 5px 0px 5px 5px;
+    margin: 0;
+}
+
+textarea {
+    background-color: rgba(11, 155, 165, 0.685);
+    color: white;
+    resize: vertical;
+    width: 100%;	
+    margin-top: 2%;
+    font-style: italic;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0;
+
+}
+
+input[type=submit]{
+    width: 92%;
+    background-color: rgba(11, 155, 165, 0.685) ;
+    border: rgb(11, 155, 165, 0.685) solid 1px;
+
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 10px;    
+}
+input[type=submit]:hover, input[type=submit]:active {
+    background-color: white;
+    color: rgba(11, 155, 165, 0.685);
+    font-weight: bold;
+}
+:focus{
+  color: rgb(255, 255, 255);
+  outline: none;
+  border: none;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.644);
+  font-style: italic;
+  font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+/** END of FORM **/
+
+/**
+.tabulka {
+    grid-area: tabl;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    padding: 20px;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+.tabulka table th td{
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+}
+.tabulka th {
+    font-weight: 400;
+    padding: 5px 15px;
+    text-align: right;
+}
+**/
+.footer {
+    grid-area: foot;
+    margin: 55px 0px 0px 15px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 200px;
+} 
+.footer img {
+    height: 80px;
+    padding: 10px;
+    margin: 0;
+}
+.footer .prvy {
+    display: flex;
+    flex-direction: column;
+}
+.footer .druhy {
+    display: flex;
+    flex-direction: column;
+}
+.footer .prvy a{
+    padding: 5px 35px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: left;
+}
+.footer .druhy a{
+    padding: 5px 35px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: left;
+}
+
+.footer a:hover {
+    color: darkblue;
+    font-weight: 500;
+}
+
+
+/** casti gridu nazvy koniec**/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'navi navi navi'
+    'titl titl slog'
+    'nadL nadL nadL'
+    'lin1 lin2 lin3'
+    'nadG nadG nadG'
+    'gall gall gall'
+    'nadA nadA abfo'
+    'abme abme abfo'
+    'mapp cont form'
+    'foot foot foot';
+    padding: 0px;
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(255, 0, 0, 0.603); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn i {
+    padding: 0;
+    margin: 0;
+}
+  
+#myBtn:hover {
+    background-color: rgba(85, 85, 85, 0.514); /* Add a dark-grey background on hover */
+}
+
+#about {
+    padding-top: 40px;
+}
+
+/*___________________________
+        Mensi pc a tablety 
+___________________________*/
+
+@media only screen and (max-width: 1300px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'navi navi navi'
+        'titl titl slog'
+        'nadL nadL nadL'
+        'lin1 lin2 lin3'
+        'nadG nadG nadG'
+        'gall gall gall'
+        'nadA nadA abfo'
+        'abme abme abfo'
+        'cont form form'
+        'mapp mapp mapp'
+        'foot foot foot';
+        padding: 0px;
+        grid-gap: 10px;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    body {
+        margin: 0px 30px;
+    }
+
+    /** navigacia **/
+    .navigacia {
+        width: 100%;    
+    }
+    .logo {
+        flex: 0 1 auto;
+    }
+    .navigacia a {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    /** title **/
+    .title {
+        margin-top: 50px;
+    }
+    .title h1 {
+        font-size: 4em;
+    }
+    .slogantext {
+        grid-area: slog;   
+    }
+    .slogantext img {
+        padding-top: 0px;
+    }
+
+    /** links **/
+    .nadpisLinky {
+        margin: 0px 15px 0px 15px;
+    }
+    .nadpisLinky h2 {
+        font-size: 2.5em;
+        margin: 0px 20px;
+    }
+
+    .link1 img {
+        height: 40px;
+    }
+    .link2 img {
+        height: 40px;
+    }
+    .link3 img {
+        height: 40px;
+    }
+
+    .tlacidlo {
+        margin: 8px;
+    }
+    .tlacidlo:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .tlacidlo a {
+        color: white;
+        font-size: 1em;
+        margin: 2px;
+    }
+    .tlacidlo a:hover {
+        color: rgb(0, 91, 133);
+        font-weight: 500;
+    }
+    /** gallery **/
+
+    .nadpisGall {
+        margin: 30px 15px 0px 15px;
+    }
+    .nadpisGall h2 {
+        font-size: 2.5em;
+        margin: 0px 20px;
+    }
+    .gallery {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .gallery img {
+        height: 128px;
+    }
+    /** About me **/
+    .nadpisAbme {
+        margin: 30px 15px 0px 15px;
+    }
+    .nadpisAbme h2 {
+        font-size: 2.5em;
+        margin: 0px 20px;
+    }
+    .tlacidlo1 a {
+        font-size: 1em;
+        margin: 2px;
+        padding: 2px;
+    }
+    .aboutme {
+        font-size: 1em;
+    }
+    .aboutme p {
+        padding: 8px;
+    }
+    .aboutmefotka {
+        grid-area: abfo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutmefotka img {
+        height: 130px;
+        padding-bottom: 0px;
+        margin-top: 60px;
+        margin-right: 5px;
+    }
+    /** Contacts **/
+    .contacts {
+        margin-top: 50px;
+        border: none;
+    }
+    .contacts h2 {
+        font-size: 2.5em;
+        margin: 0px 30px;
+    }
+    .contacts ul {
+        font-size: 1em;
+        padding: 20px 2px 0px 3px;
+        line-height: 1.6em;
+    }
+    .contacts li {
+        list-style-type: none;
+    }
+    .contacts i {
+        padding: 2px;
+        margin: 0;
+        font-size: 1.5em;
+    }
+    /** FORMular :) **/
+    .formular {
+        margin-top: 30px;
+    }
+    .formular form {
+        padding: 5px;
+        height: 100%;
+        width: 90%;
+        float: right;
+        color: white;
+    }
+    .formular input, textarea{
+        padding: 7px;
+        margin-bottom: 1%;
+    }
+    input[type=submit]{
+        width: 95%;
+        font-size: 0.9em;
+        padding: 7px;    
+    }
+    .label {
+        color: rgb(0, 84, 90);
+        font-size: 0.9em;
+        padding: 4px 0px 1px 3px;
+    }
+    ::placeholder{
+        font-size: 1em;
+    }
+    /** END of FORM **/
+    .map {
+        margin-top: 30px;
+        height: 250px;
+    }
+    .footer {
+        height: 150px;
+        font-size: 0.9em;
+    }
+
+}
+
+
+/*___________________________
+        Velke Mobily 
+___________________________*/
+
+@media only screen and (max-width: 620px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'navi'
+        'titl'
+        'nadL'
+        'lin1'
+        'lin2'
+        'lin3'
+        'nadG'
+        'gall'
+        'nadA'
+        'abfo'
+        'abme'
+        'cont'
+        'form'
+        'mapp'
+        'foot';
+        padding: 0px;
+        grid-gap: 10px;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    
+    body {
+        margin: 0px 20px;
+    }
+
+    /** navigacia hamburgerová**/
+    .navigacia {
+        width: 100%;
+    }
+    .navigacia .icon {
+        display: initial;
+        float: left;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        font-size: 1.5em;
+    }
+
+    #skryvane {
+        display: none;    
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .logo {
+        flex: 0 1 auto;
+    }
+    .navigacia a {
+        padding: 15px;
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    /** title **/
+    .title { 
+        margin: 30px auto;
+        padding: 0; 
+    }
+    .title h1 {
+        font-size: 4em;
+        border: none;
+        padding: 0px;
+        margin: 30px auto 0px auto;
+        text-align: center;
+    }
+    .slogantext {
+        display: none;  
+    }
+
+    /** links **/
+    .nadpisLinky {
+        margin: 35px auto 0px auto;
+    }
+    .nadpisLinky h2 {
+        font-size: 3em;
+        margin: 0px 5px;
+    }
+
+    .link1 {
+        width: 100%;
+        margin: auto;
+        border: none;
+    }
+    .link2 {
+        width: 100%;
+        margin: auto;
+        border: none;
+    }
+    .link3 {
+        width: 100%;
+        margin: auto;
+        border: none;
+    }
+
+    .link1 img {
+        height: 60px;
+    }
+    .link2 img {
+        height: 60px;
+    }
+    .link3 img {
+        height: 60px;
+    }
+    .tlacidlo {
+        margin: 8px;
+        width: 50%;
+        background-color: transparent;
+    }
+    .tlacidlo:active {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .tlacidlo a {
+        color: white;
+        font-size: 1em;
+        margin: 2px;
+        font-weight: 500;
+    }
+    .tlacidlo a:active {
+        color: rgb(0, 91, 133);
+        font-weight: 500;
+    }
+    /** gallery **/
+    .nadpisGall {
+        margin: 50px auto 0px auto;
+    }
+    .nadpisGall h2 {
+        font-size: 3em;
+        margin: 0px 5px;
+    }
+    .gallery {
+        border: none;
+        align-items: center;
+    }
+    .gallery img {
+        height: 85px;
+    }
+    /** About me **/
+    .nadpisAbme {
+        margin-top: 35px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .nadpisAbme h2 {
+        font-size: 3em;
+    }
+    .tlacidlo1 {
+        margin: auto;
+        padding: 0;
+    }
+    .tlacidlo1 a {
+        font-size: 1.3em;
+        margin: 2px;
+        padding: 2px;
+    }
+    .aboutmefotka {
+        grid-area: abfo;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutmefotka img {
+        height: 250px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin: auto;
+    }
+    .aboutme {
+        width: 86%;
+        font-size: 1em;
+        border: none;
+        margin: auto;
+    }
+    .aboutme p {
+        padding: 4px;
+        text-align: center;
+    }
+    /** Contacts **/
+    .contacts {
+        border: none;
+        margin-top: 35px;
+
+    }
+    .contacts h2 {
+        margin: 30px auto 0px auto;
+        font-size: 3em;
+        text-align: center;
+    }
+    .contacts ul {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .contacts li {
+        list-style-type: none;
+        margin-left: 100px;
+    }
+    .contacts i {
+        font-size: 1.5em;
+    }
+    /** FORMular :) **/
+    .formular {
+        margin-top: 30px;
+    }
+    .formular form {
+        padding: 5px;
+        height: 100%;
+        width: 80%;
+        float: initial;
+        color: white;
+        margin: auto;   
+    }
+    .formular input, textarea{
+        padding: 7px;
+        margin-bottom: 1%;
+    }
+    input[type=submit]{
+        width: 95%;
+        font-size: 0.9em;
+        padding: 7px;    
+    }
+    .label {
+        color: rgb(0, 50, 90);
+        font-size: 1em;
+        padding: 4px 0px 1px 3px;
+    }
+    ::placeholder{
+        font-size: 1em;
+    }
+    textarea {
+        background-color: rgba(11, 121, 165, 0.9);
+    }
+    input[type=text], input[type=email] {
+        background-color: rgba(11, 121, 165, 0.9);
+    }
+    input[type=submit]{
+        background-color: rgba(11, 121, 165, 0.9);
+        border: rgba(11, 121, 165, 0.9) solid 1px; 
+    }
+    input[type=submit]:hover{
+        color:rgb(11, 121, 165);
+    }
+    input[type=submit]:active{
+        color:rgb(7, 72, 97);
+    }
+    /** END of FORM **/
+    .map {
+        margin: 30px auto 0px auto;
+        height: 250px;
+        width: 80%;
+    }
+    .footer {
+        height: 200px;
+        font-size: 0.9em;
+    }
+    .footer img {
+        height: 70px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer .prvy {
+        flex: 1 0 auto;
+    }
+    .footer .druhy {
+        flex: 1 0 auto;
+    }
+    .footer .prvy a {
+        text-align: left;
+        padding: 5px 10px;
+
+    }
+    .footer .druhy a{
+        padding: 5px 5px;
+        text-align: center;
+    }
+}
+
