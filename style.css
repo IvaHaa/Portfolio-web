@@ -846,14 +846,14 @@ ___________________________*/
 
     /** title **/
     .title { 
-        margin: auto;
+        margin: 0;
         padding: 0; 
     }
     .title h1 {
-        font-size: 3em;
+        font-size: 3.5em;
         border: none;
         padding: 0px;
-        margin: 30px auto 0px auto;
+        margin: 15px auto 0px auto;
         text-align: center;
     }
     .slogantext {
@@ -972,6 +972,7 @@ ___________________________*/
     .contacts {
         border: none;
         margin-top: 35px;
+
     }
     .contacts h2 {
         margin: 30px auto 0px auto;
@@ -1058,6 +1059,7 @@ ___________________________*/
     .footer .prvy a {
         text-align: left;
         padding: 5px 10px;
+
     }
     .footer .druhy a{
         padding: 5px 5px;
