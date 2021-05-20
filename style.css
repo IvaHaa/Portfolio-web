@@ -982,10 +982,11 @@ ___________________________*/
     .contacts ul {
         font-size: 1em;
         line-height: 1.5em;
+        margin: auto;
+        width: 50%;
     }
     .contacts li {
         list-style-type: none;
-        margin-left: 100px;
     }
     .contacts i {
         font-size: 1.5em;
@@ -1051,6 +1052,42 @@ ___________________________*/
         padding: 0;
     }
     .footer .prvy {
+        flex: 0 1 auto;
+    }
+    .footer .druhy {
+        flex: 0 1 auto;
+    }
+    .footer .prvy a {
+        text-align: left;
+        padding: 5px 50px;
+
+    }
+    .footer .druhy a{
+        padding: 5px 5px;
+        text-align: left;
+    }
+}
+/*___________________________
+        Uzke Mobily 
+___________________________*/
+@media only screen and (max-width: 400px) {
+    .title h1 {
+        margin: 28px 0px 0px auto;
+        padding: 0;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .footer {
+        height: 200px;
+        font-size: 0.9em;
+    }
+    .footer img {
+        height: 70px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer .prvy {
         flex: 1 0 auto;
     }
     .footer .druhy {
@@ -1058,12 +1095,11 @@ ___________________________*/
     }
     .footer .prvy a {
         text-align: left;
-        padding: 5px 10px;
+        padding: 5px 5px 5px 30px;
 
     }
     .footer .druhy a{
         padding: 5px 5px;
-        text-align: center;
+        text-align: right;
     }
 }
-
