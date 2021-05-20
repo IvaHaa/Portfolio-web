@@ -983,7 +983,7 @@ ___________________________*/
         font-size: 1em;
         line-height: 1.5em;
         margin: auto;
-        width: 65%;
+        width: 80%;
     }
     .contacts li {
         list-style-type: none;
@@ -1078,6 +1078,23 @@ ___________________________*/
         font-size: 2em;
     }
 
+    .nadpisAbme {
+        margin-top: 35px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .tlacidlo1 {
+        margin: auto;
+        padding: 0;
+    }
+    .tlacidlo1 a {
+        font-size: 1em;
+        margin: 2px;
+        padding: 4px;
+        text-align: left;
+    }
+
     .footer {
         height: 200px;
         font-size: 0.9em;
@@ -1096,10 +1113,10 @@ ___________________________*/
     .footer .prvy a {
         text-align: left;
         padding: 5px 5px 5px 30px;
-
     }
     .footer .druhy a{
         padding: 5px 5px;
         text-align: right;
     }
+
 }
