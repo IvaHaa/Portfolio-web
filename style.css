@@ -1112,11 +1112,11 @@ ___________________________*/
     }
     .footer .prvy a {
         text-align: left;
-        padding: 5px 5px 5px 30px;
+        padding: 5px 15px 5px 30px;
     }
     .footer .druhy a{
         padding: 5px 5px;
-        text-align: right;
+        text-align: left;
     }
 
 }
