@@ -2,30 +2,148 @@
 <html lang="sk">
     <head>
         <meta charset="utf-8">
-        <title>Art Portfolio Iva Hevesiova</title>
-        <link rel="stylesheet" href="../style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+
+        <title>Web Portfolio - Iva Hevesi</title>
+        <link rel="icon" href="logo.png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <link rel="stylesheet" type="text/css" href="styleWeb.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     </head>
     <body>
+        <div class="page">
 
-        <header>
-			<nav class="flex-container">
-				<div><a href="../index.html"> <i class="fas fa-home"></i> </a></div>
-				<div><a href="frontend.html">Front-End Development & Design</a></div>
-                <div><a href="photography.html">Photography</a></div>
-                <div><a href="art.html">Visual Art</a></div>
-                <div><a href="circus.html">Circus / Cirque Noveau </a></div>
-                <div><a href="modelling.html">Modelling</a></div>
-			</nav>
-		</header>
+            <div class="grid-container">
 
-        <footer>
-            <p>Contact me at ive.hevesi@gmail.com</p>
-            <p><i>Copyright Iva Hevesiová</i></p>
-        </footer>
+                <nav class="navigacia">
+
+                    <div class="nelogo">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>  
+                        <ul id="skryvane">
+                            <li class="logo"> <a href="index.html" onclick="myFunction1()"> @Iva Hevesi </a> </li>
+                            <li> <a href="visuals.html"  onclick="myFunction1()">Visual Graphics & Photography</a> </li>
+                            <li> <a href="circus.html"  onclick="myFunction1()">Contemporary Circus & Movement</a> </li>
+                        </ul>
+                    </div>
+                </nav>                
+
+                <script>
+
+                    var x = document.getElementById("skryvane");
+
+                    function myFunction() {
+                      if (x.style.display === "flex" && $(window).width() <= 933) {
+                        x.style.display = "none";
+                      } else if ($(window).width() <= 933){
+                        x.style.display = "flex";
+                        x.style.flexDirection = "column";
+                        x.style.textAlign = "left";
+                      }
+                    }
+
+                    function myFunction1() {
+                      if (x.style.display === "flex" && $(window).width() <= 933) {
+                        x.style.display = "none";
+                      } else if ($(window).width() <= 933){
+                        x.style.display = "flex";
+                        x.style.flexDirection = "column";
+                        x.style.textAlign = "left";                       
+                      }
+                    }
+
+                    $(window).resize(function() {
+                        if ($(window).width() <= 933) {
+                            x.style.display = "none";
+                        }
+                    });
+
+                    
+                    $(window).resize(function() {
+                        if ($(window).width() > 933) {
+                            x.style.display = "flex";
+                            x.style.flexDirection = "row";
+                        }
+                    });
+
+                </script>
+
+                <div class="title">
+                    <h1>User Experience Design <br> & Web Development</h1>
+                </div>
+                <div class="slogantext">                           
+                    <img src="htmlcssfigma.png" alt="loga html css a figmy">
+                </div>
+
+                <div class="nadpisA" >
+                    <h2>App Design</h2>
+                </div>
+
+                <div class="webA">
+                    <p> <b>DogCare: Figma app prototype</b> </p>
+                    <p> Try it out here: </p>
+                    <!-- <img src="gallery/Asset-14.png" alt="app prototype" style="height: 200px;"> -->
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWunuBVrqvLu7mEfeanLLO9%2FDogCare-new%3Fnode-id%3D37%253A194%26scaling%3Dscale-down%26page-id%3D0%253A1" allowfullscreen></iframe>
+                </div>
+
+                <div class="nadpisB" >
+                    <h2>Web development</h2>
+                </div>
+
+                <div class="webB">
+                    <p> <b>Portfolio website</b>  - The one you're on right now :) </p>
+                    <p> Wireframes (made in Miro) <br> Design (made in Adobe Illustrator) <br> & Development (HTML, CSS, JavaScript) </p>
+                    <img src="wireframeAdesign.png" alt="web">
+                    <div class="tlacidlo2"><a href="https://github.com/IvaHaa/Portfolio-web"> <i class="fab fa-github-square"></i> View the code on Github</a></div>
+                </div>
+                                    
+                <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-arrow-up"></i></button>
+
+                <script>
+                    //Get the button
+                    var mybutton = document.getElementById("myBtn");
+                    
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function() {scrollFunction()};
+                    
+                    function scrollFunction() {
+                      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+                        mybutton.style.display = "block";
+                      } else {
+                        mybutton.style.display = "none";
+                      }
+                    }
+                    
+                    // When the user clicks on the button, scroll to the top of the document
+                    function topFunction() {
+                      document.body.scrollTop = 0;
+                      document.documentElement.scrollTop = 0;
+                    }
+                    
+                </script>
+                
+                <div class="footer"> 
+                    <a href="index.html"><img src="logo.svg" alt="logo vacsie"></a> 
+
+                    <div class="prvy">
+                        <a href="index.html#gallery">Home Gallery</a>
+                        <a href="index.html#about">About Me</a>
+                        <a href="index.html#contacts">Contacts</a>
+                    </div>
+                    <div class="druhy">
+                        <a href="#">UX Design & Web</a>
+                        <a href="visuals.html"> Graphics & Photography</a>
+                        <a href="circus.html">Circus & Movement</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </body>
-
-</html>
+</html>    

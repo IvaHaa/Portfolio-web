@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    padding: 0px;
+    margin: 0px 80px;
+    
+    background-image: url("pozadie.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+/** casti gridu nazvy **/
+
+/** navigacia **/
+.navigacia {
+    grid-area: navi;
+    padding: 0px;
+    margin: 0px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 90%;
+    z-index: 10;
+
+    background-image: url("pozadie.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.navigacia .icon {
+    display: none;
+}
+
+.nelogo ul {
+    display: flex;
+    align-content: space-between; 
+    list-style-type: none;
+}
+
+.logo {
+    flex: 1 0 30%;
+    text-align: left;
+}
+
+.navigacia a {
+    text-decoration: none;
+    padding: 15px 30px 15px 0px;
+    margin: 0;
+    line-height: 1px;
+}
+
+.navigacia a {
+    color: white;
+}
+.navigacia a:hover {
+    color: darkblue;
+}
+
+
+/**
+meniace sa active links 
+.current {
+    background-color: black;
+    color: blue;
+  }
+
+**/
+
+/** title **/
+.title {
+    grid-area: titl;
+    margin: 0px 15px;
+    margin-top: 100px;
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    margin: 50px 0px 0px 0px;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+
+}
+.slogantext {
+    grid-area: slog;   
+}
+.slogantext img {
+    height: 100px;
+    padding-top:230px;
+
+}
+
+/** gallery **/
+.nadpisGall {
+    grid-area: nadG;
+    /** background-color: darkgoldenrod; **/
+    margin: 75px 15px 0px 15px;
+}
+.nadpisGall h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0px 25px;
+}
+/* zvysok galery: */
+.gallery {
+    grid-area: gall;
+    /* border: rgba(255, 255, 255, 0.8) solid 1px; */
+}
+.gallery img {
+    height: 350px;
+    padding: 3px;
+    margin: 0;
+}
+.gallery {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/**
+.gallery > div > img {
+    transition: .1s transform;
+    transform: translateZ(0); 
+}
+.gallery > div:hover {
+    z-index: 1;
+}
+.gallery > div:hover > img {
+    transform: scale(1.8,1.8);
+    transition: .3s transform;
+}
+.cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.cf:after {
+    clear: both;
+}
+**/
+
+/** About me **/
+.nadpisAbme {
+    grid-area: nadA;
+    margin: 75px 0px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nadpisAbme h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+    margin: 0px 25px;
+}
+
+.aboutme {
+    grid-area: abme;
+    border: rgba(255, 255, 255, 0.8) solid 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    padding: 0;
+}
+.aboutme p {
+    padding: 10px;
+    margin: 0;
+}
+/** footer **/
+.footer {
+    grid-area: foot;
+    margin: 55px 0px 0px 15px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 200px;
+} 
+.footer img {
+    height: 80px;
+    padding: 10px;
+    margin: 0;
+}
+.footer .prvy {
+    display: flex;
+    flex-direction: column;
+}
+.footer .druhy {
+    display: flex;
+    flex-direction: column;
+}
+.footer .prvy a{
+    padding: 5px 35px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: left;
+}
+.footer .druhy a{
+    padding: 5px 35px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: left;
+}
+
+.footer a:hover {
+    color: darkblue;
+    font-weight: 500;
+}
+
+
+/** casti gridu nazvy koniec**/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'navi navi navi'
+    'titl titl slog'
+    
+    'nadG nadG nadG'
+    'gall gall gall'
+
+    'nadA nadA nadA'
+    'abme abme abme'
+
+    
+    'foot foot foot';
+    padding: 0px;
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(255, 0, 0, 0.603); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn i {
+    padding: 0;
+    margin: 0;
+}
+  
+#myBtn:hover {
+    background-color: rgba(85, 85, 85, 0.514); /* Add a dark-grey background on hover */
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+/*___________________________
+        Mensi pc a tablety 
+___________________________*/
+
+@media only screen and (max-width: 1300px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'navi navi navi'
+        'titl titl slog'
+
+        'nadG nadG nadG'
+        'gall gall gall'
+
+        'nadA nadA nadA'
+        'abme abme abme'
+        
+        'foot foot foot';
+        padding: 0px;
+        grid-gap: 10px;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    body {
+        margin: 0px 30px;
+    }
+
+    /** navigacia **/
+    .navigacia {
+        width: 100%;    
+    }
+    .logo {
+        flex: 0 1 auto;
+    }
+    .navigacia a {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .title h1 {
+        font-size: 3.5em;
+    }
+
+    
+    /** gallery **/
+
+    .nadpisGall {
+        margin: 30px 15px 0px 15px;
+    }
+    .nadpisGall h2 {
+        font-size: 2.5em;
+        margin: 0px 20px;
+    }
+    .gallery {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .gallery img {
+        height: 128px;
+    }
+    /** About me **/
+    .nadpisAbme {
+        margin: 30px 15px 0px 15px;
+    }
+    .nadpisAbme h2 {
+        font-size: 2.5em;
+        margin: 0px 20px;
+    }
+   
+    .aboutme {
+        font-size: 1em;
+    }
+    .aboutme p {
+        padding: 8px;
+    }
+
+    .footer {
+        height: 150px;
+        font-size: 0.9em;
+    }
+
+}
+
+
+/*___________________________
+        Velke Mobily 
+___________________________*/
+
+@media only screen and (max-width: 950px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'navi'
+        'titl'
+        'nadL'
+        'lin1'
+        'lin2'
+        'lin3'
+        'nadG'
+        'gall'
+        'nadA'
+        'abfo'
+        'abme'
+        'cont'
+        'form'
+        'mapp'
+        'foot';
+        padding: 0px;
+        grid-gap: 10px;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+    
+    body {
+        margin: 0px 20px;
+    }
+
+    /** navigacia hamburgerová**/
+    .navigacia {
+        width: 100%;
+    }
+    .navigacia .icon {
+        display: initial;
+        float: left;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        font-size: 1.5em;
+    }
+
+    #skryvane {
+        display: none;    
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .logo {
+        flex: 0 1 auto;
+    }
+    .navigacia a {
+        padding: 15px;
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    /** title **/
+    .title { 
+        margin: 0;
+        padding: 0; 
+    }
+    .title h1 {
+        font-size: 3.5em;
+        border: none;
+        padding: 0px;
+        margin: 15px auto 0px auto;
+        text-align: center;
+    }
+    .slogantext {
+        display: none;  
+    }
+
+    /** gallery **/
+    .nadpisGall {
+        margin: 50px auto 0px auto;
+    }
+    .nadpisGall h2 {
+        font-size: 3em;
+        margin: 0px 5px;
+    }
+    .gallery {
+        border: none;
+        align-items: center;
+    }
+    .gallery img {
+        height: 85px;
+    }
+    /** About me **/
+    .nadpisAbme {
+        margin-top: 35px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .nadpisAbme h2 {
+        font-size: 3em;
+    }
+    .tlacidlo1 {
+        margin: auto;
+        padding: 0;
+    }
+    .tlacidlo1 a {
+        font-size: 1.3em;
+        margin: 2px;
+        padding: 2px;
+    }
+    
+    .aboutme {
+        width: 86%;
+        font-size: 1em;
+        border: none;
+        margin: auto;
+    }
+    .aboutme p {
+        padding: 4px;
+        text-align: center;
+    }
+    
+    .footer {
+        height: 200px;
+        font-size: 0.9em;
+    }
+    .footer img {
+        height: 70px;
+        margin: 0;
+        padding: 0;
+    }
+    .footer .prvy {
+        flex: 0 1 auto;
+    }
+    .footer .druhy {
+        flex: 0 1 auto;
+    }
+    .footer .prvy a {
+        text-align: left;
+        padding: 5px 30px;
+
+    }
+    .footer .druhy a{
+        padding: 5px 5px;
+        text-align: left;
+    }
+}
+/*___________________________
+        Uzke Mobily 
+___________________________*/
+@media only screen and (max-width: 600px) {
+    .title h1 {
+        margin: 28px 0px 0px auto;
+        padding: 0;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .nadpisAbme {
+        margin-top: 35px;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .navigacia a {
+        padding: 15px;
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .footer {
+        height: 200px;
+        font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto 0px 25px;
+    }
+    .footer img {
+        height: 70px;
+        margin: 0 0 15px 0;
+        padding: 0px ;
+    }
+    .footer .prvy {
+        flex: 1 0 auto;
+        padding: 0px;
+        margin: 0px 0 15px 0;
+    }
+    .footer .druhy {
+        flex: 1 0 auto;
+        padding: 0px 0 30px 0;
+        margin: 0;
+    }
+    .footer .prvy a {
+        text-align: left;
+        padding: 0px;
+        margin: 0px;
+    }
+    .footer .druhy a{
+        text-align: left;
+        padding: 0px;
+        margin: 0px;
+    }
+
+}

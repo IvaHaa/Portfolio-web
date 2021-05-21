@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Cormorant+Unicase:wght@600&family=Montserrat:ital,wght@0,200;0,400;0,900;1,200;1,400;1,900&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -456,28 +456,6 @@ input[type=submit]:hover, input[type=submit]:active {
 }
 /** END of FORM **/
 
-/**
-.tabulka {
-    grid-area: tabl;
-    border: rgba(255, 255, 255, 0.8) solid 1px;
-    padding: 20px;
-    font-size: 1.3em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    color: white;
-}
-.tabulka table th td{
-    border: rgba(255, 255, 255, 0.8) solid 1px;
-    border-collapse: collapse;
-    padding: 10px;
-    text-align: left;
-}
-.tabulka th {
-    font-weight: 400;
-    padding: 5px 15px;
-    text-align: right;
-}
-**/
 .footer {
     grid-area: foot;
     margin: 55px 0px 0px 15px;
@@ -787,7 +765,7 @@ ___________________________*/
         Velke Mobily 
 ___________________________*/
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 650px) {
 
     .grid-container {
         display: grid;
@@ -1040,7 +1018,7 @@ ___________________________*/
     .map {
         margin: 30px auto 0px auto;
         height: 250px;
-        width: 80%;
+        width: 85%;
     }
     .footer {
         height: 200px;
@@ -1059,7 +1037,7 @@ ___________________________*/
     }
     .footer .prvy a {
         text-align: left;
-        padding: 5px 50px;
+        padding: 5px 30px;
 
     }
     .footer .druhy a{
@@ -1098,25 +1076,34 @@ ___________________________*/
     .footer {
         height: 200px;
         font-size: 0.9em;
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto 0px 25px;
     }
     .footer img {
         height: 70px;
-        margin: 0;
-        padding: 0;
+        margin: 0 0 15px 0;
+        padding: 0px ;
     }
     .footer .prvy {
         flex: 1 0 auto;
+        padding: 0px;
+        margin: 0px 0 15px 0;
     }
     .footer .druhy {
         flex: 1 0 auto;
+        padding: 0px 0 30px 0;
+        margin: 0;
     }
     .footer .prvy a {
         text-align: left;
-        padding: 5px 15px 5px 30px;
+        padding: 0px;
+        margin: 0px;
     }
     .footer .druhy a{
-        padding: 5px 5px;
         text-align: left;
+        padding: 0px;
+        margin: 0px;
     }
 
 }

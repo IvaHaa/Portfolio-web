@@ -2,75 +2,128 @@
 <html lang="sk">
     <head>
         <meta charset="utf-8">
-        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+
+        <title>Visual Portfolio - Iva Hevesi</title>
+        <link rel="icon" href="logo.png">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-        <link rel="stylesheet" type="text/css" href="styleP.css">
+        <link rel="stylesheet" type="text/css" href="styleVisuals.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     </head>
     <body>
         <div class="page">
 
             <div class="grid-container">
 
-                <div class="navigacia">
-                    
-                    <nav class="menu">
-                        <ul>
-                            <li> <a href="index.html" class="activna logo"> <img src="logo.svg" alt="logo" style="height: 80px;"> </a> </li>
-                            <li> <a href="/portfolio_stranka/web.html" class="nelogo">User Experience Design & Web Development</a> </li>
-                            <li> <a href="/portfolio_stranka/circus.html" class="nelogo">Contemporary Circus & Movement</a> </li>
+                <nav class="navigacia">
+
+                    <div class="nelogo">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>  
+                        <ul id="skryvane">
+                            <li class="logo"> <a href="index.html" onclick="myFunction1()"> @Iva Hevesi </a> </li>
+                            <li> <a href="web.html"  onclick="myFunction1()">User Experience Design & Web Development</a> </li>
+                            <li> <a href="circus.html"  onclick="myFunction1()">Contemporary Circus & Movement</a> </li>
                         </ul>
-                    </nav>
+                    </div>
+                </nav>                
 
+                <script>
 
-                </div>
-                <div class="title">
-                    <h1>Visual Graphics <br> & Photography</h1>
-                </div>
-                <div class="slogantext">                           
-                    <img src="cc.png" alt="loga adobe cc">
-                </div>
+                    var x = document.getElementById("skryvane");
 
-                <div class="nadpisAbme" >
-                    <h2>About my visual work??</h2>
-                </div>
+                    function myFunction() {
+                      if (x.style.display === "flex" && $(window).width() <= 933) {
+                        x.style.display = "none";
+                      } else if ($(window).width() <= 933){
+                        x.style.display = "flex";
+                        x.style.flexDirection = "column";
+                        x.style.textAlign = "left";
+                      }
+                    }
 
-                <div class="aboutme">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate convallis urna, eget rutrum nisi tristique id. Nullam non elit a orci dignissim maximus. In pharetra metus a lacus efficitur, at tincidunt purus tempor. Praesent venenatis felis nec nunc cursus, ac elementum tortor eleifend. Cras tincidunt, lorem ut vehicula egestas, quam ligula porta est, nec ultricies dui turpis lobortis ipsum. Aliquam eget tempus dolor. Phasellus tempor pellentesque tortor interdum tristique. Donec rutrum quam non orci mattis, sit amet auctor ex ullamcorper. Duis non posuere leo. Nulla et pulvinar turpis, sit amet pellentesque nulla. Nulla dictum, massa sit amet mattis vestibulum, augue tellus elementum nibh, vel tristique risus nisi ac magna.</p>
+                    function myFunction1() {
+                      if (x.style.display === "flex" && $(window).width() <= 933) {
+                        x.style.display = "none";
+                      } else if ($(window).width() <= 933){
+                        x.style.display = "flex";
+                        x.style.flexDirection = "column";
+                        x.style.textAlign = "left";                       
+                      }
+                    }
 
-                    <p>   Suspendisse ac nunc malesuada, mattis mi id, placerat turpis. Phasellus ac dolor sed augue interdum tincidunt sed et tortor. Morbi consectetur metus et mauris tempus rhoncus. Vestibulum quis enim ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus tristique ante in metus gravida, vitae placerat ex condimentum. Praesent rutrum ultrices felis et venenatis. Morbi varius suscipit arcu, in tempus mauris congue eget. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris et diam nec ligula ultrices semper eget non elit. Suspendisse erat lacus, consequat eu nunc vel, fermentum accumsan risus.</p>
-                        
-                    <p> Nam elit turpis, efficitur vitae aliquam congue, facilisis facilisis erat. Suspendisse lacinia, leo non varius semper, enim elit tempor dolor, at pharetra sapien ante vel massa. Curabitur tempor lacinia nunc, non tempor dolor elementum ut. Etiam arcu velit, sollicitudin eu quam at, rhoncus maximus risus. Integer ultricies mollis faucibus. Phasellus justo turpis, rutrum sed turpis ut, pharetra iaculis diam. Pellentesque egestas molestie lorem, sit amet auctor leo tempor a. Cras rhoncus eleifend dui, et tristique augue facilisis sed. In hac habitasse platea dictumst. Morbi ac tortor eu est ullamcorper eleifend sit amet a enim. Phasellus a consectetur lorem. </p> 
-                </div>
+                    $(window).resize(function() {
+                        if ($(window).width() <= 933) {
+                            x.style.display = "none";
+                        }
+                    });
 
-
-                <div class="nadpisGall">
-                    <h2>Gallery</h2>
-                </div>
-
-                <div class="gallery cf">
-                    <div><img src="/portfolio_stranka/gallery/Asset-14.png" alt=""></div>
-                    <div><img src="/portfolio_stranka/gallery/Asset-15.png" alt=""></div>
-                    <div><img src="/portfolio_stranka/gallery/Asset-16.png" alt=""></div>
-                    <div><img src="/portfolio_stranka/gallery/Asset-17.png" alt=""></div>
                     
-                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-18.png" alt=""></div>
-                    <div><img class="vacsie" src="/portfolio_stranka/gallery/gif.gif" alt=""></div>
-                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-19.png" alt=""></div>
-                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-20.png" alt=""></div>
-                    <div><img class="vacsie" src="/portfolio_stranka/gallery/Asset-21.png" alt=""></div>
+                    $(window).resize(function() {
+                        if ($(window).width() > 933) {
+                            x.style.display = "flex";
+                            x.style.flexDirection = "row";
+                        }
+                    });
 
-                </div>
+                </script>
+
+                    <div class="title">
+                        <h1>Visual Graphics <br> & Photography</h1>
+                    </div>
+                    <div class="slogantext">                           
+                        <img src="cc.png" alt="loga adobe cc">
+                    </div>
+
+                    <div class="nadpisAbme" >
+                        <h2>About my visual work</h2>
+                    </div>
+
+                    <div class="aboutme">
+                        <p> I greatly enjoy creating any visual materials, from posters for events to complicated abstract paintings. </p>
+                        <p> I work mainly with <i>Adobe Photoshop</i> and <i>Illustrator</i>  (for vector work I also use <i>Inkscape</i> ), but have dabbled with many different tools online and offline. I'm mostly self-taught, but have had courses in vector work and basic painting skills. I've also learned how to work with 3D art in <i>3DsMax</i>.</p>
+                        <p> <b>Sample text:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida viverra velit, a pretium dolor convallis id. Maecenas a erat sagittis, accumsan sapien in, consequat nulla. Sed sodales auctor arcu non tempor. Duis condimentum, lorem vel semper interdum, velit metus vestibulum felis, vel lacinia tortor ipsum id nibh. Proin porttitor laoreet quam vitae varius. Donec a erat non elit gravida pulvinar. Aenean nunc nibh, euismod eget pretium sed, porttitor nec risus. Nulla gravida tellus id elit fermentum cursus. Maecenas sagittis magna ut metus egestas, ac volutpat felis rutrum. Etiam at purus iaculis, accumsan justo in, tristique metus. Duis venenatis dapibus arcu, nec varius quam ornare ac. </p>
+                        <p> Etiam dapibus, odio eu ornare luctus, orci enim suscipit elit, ut vestibulum tellus felis nec ex. Duis bibendum nisi justo, sollicitudin placerat urna luctus tincidunt. Quisque sit amet mauris ut ipsum mattis facilisis vitae ut lectus. Nam gravida scelerisque libero ut rutrum. Aliquam libero libero, pellentesque in varius tristique, tincidunt eu mi. Aenean in quam non arcu lobortis pellentesque ut eu lorem. Proin nisi orci, ultricies sed consectetur sit amet, volutpat vel sapien. Cras quis sapien quam. Curabitur ac lectus dictum, gravida mi id, ornare odio. Phasellus massa risus, luctus nec purus et, ornare pellentesque sem. Proin imperdiet a velit quis imperdiet. Nam sit amet dolor urna. Aenean commodo vulputate ultricies. Morbi pharetra gravida diam ut feugiat. Ut vitae massa non quam pharetra tempus. Pellentesque a tempus nibh, non mattis ipsum.</p>
+                    
+                    </div>
+                               
+                    <div class="nadpisGall">
+                        <h2>Gallery</h2>
+                    </div>
+
+                    <div class="gallery cf">
+                        <div><img src="galleryVisuals/1.png" alt=""></div>
+                        <div><img src="galleryVisuals/2-2.png" alt=""></div>
+                        <div><img src="galleryVisuals/2.png" alt=""></div>
+                        <div><img src="galleryVisuals/3.png" alt=""></div>
+                        <div><img src="galleryVisuals/4.png" alt=""></div>
+                        <div><img src="galleryVisuals/4-1.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/4-2.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/4-3.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/4-4.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/4-5.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/5.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/7-1.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/8.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/10.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/11.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/12.jpg" alt=""></div>
+                        <div><img src="galleryVisuals/13.jpg" alt=""></div>
 
 
-                
-               
 
+
+
+                    </div>
+                                    
                 <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-arrow-up"></i></button>
+
                 <script>
                     //Get the button
                     var mybutton = document.getElementById("myBtn");
@@ -79,7 +132,7 @@
                     window.onscroll = function() {scrollFunction()};
                     
                     function scrollFunction() {
-                      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
                         mybutton.style.display = "block";
                       } else {
                         mybutton.style.display = "none";
@@ -91,20 +144,21 @@
                       document.body.scrollTop = 0;
                       document.documentElement.scrollTop = 0;
                     }
+                    
                 </script>
                 
                 <div class="footer"> 
-                    <img src="/portfolio_stranka/logo.svg" alt="logovacsie">
+                    <a href="index.html"><img src="logo.svg" alt="logo vacsie"></a> 
 
                     <div class="prvy">
-                        <a href="#">Home</a>
-                        <a href="/portfolio_stranka/index.html#Contact">Contact</a>
-                        <a href="/portfolio_stranka/index.html#About">About me</a>
+                        <a href="index.html#gallery">Home Gallery</a>
+                        <a href="index.html#about">About Me</a>
+                        <a href="index.html#contacts">Contacts</a>
                     </div>
                     <div class="druhy">
-                        <a href="/portfolio_stranka/web.html">UX Design & Web</a>
-                        <a href="#">Visual Graphics & Photography</a>
-                        <a href="/portfolio_stranka/circus.html">Contemporary Circus & Movement</a>
+                        <a href="web.html">UX Design & Web</a>
+                        <a href="#"> Graphics & Photography</a>
+                        <a href="circus.html">Circus & Movement</a>
                     </div>
                 </div>
                 
